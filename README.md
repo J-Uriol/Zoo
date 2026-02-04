@@ -9,7 +9,7 @@
 
 Este proyecto es una demostración de fuerza bruta con **CSS puro**. Sin imágenes (`<img>`), sin `SVG` incrustado en el HTML, y sin JavaScript. Solo matemáticas, geometría y sufrimiento.
 
-El objetivo era crear un pingüino geométrico "Low Poly" utilizando exclusivamente la propiedad `clip-path` y variables CSS (`var(--)`) para una gestión "limpia" de los polígonos.
+El objetivo era crear un zoo geométrico "Low Poly" utilizando exclusivamente la propiedad `clip-path` y variables CSS (`var(--)`) para una gestión "limpia" de los polígonos.
 
 ## 🎨 Características
 
