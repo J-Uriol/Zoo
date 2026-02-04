@@ -1,0 +1,89 @@
+/* Estilos Base */
+body {
+  background: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.canvas {
+  position: relative;
+  width: 700px; /* Puedes cambiar este tamaño y el koala se escalará */
+  aspect-ratio: 1 / 1;
+}
+
+.pieza {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+:root {
+  /* PUNTOS GEOMÉTRICOS EN PORCENTAJES (faro) */
+  --tri00-faro: 55% 95%, 70% 45%, 62.5% 95%;
+  --tri01-faro: 70% 45%, 80% 42.5%, 62.5% 95%;
+  --tri02-faro: 70% 55%, 87.5% 52.5%, 80% 60%;
+  --tri03-faro: 70% 55%, 80% 60%, 70% 60%;
+  --tri04-faro: 87.5% 52.5%, 92.5% 45%, 85% 47.5%;
+  --tri05-faro: 80% 60%, 90% 62.5%, 85% 67.5%;
+  --tri06-faro: 37.5% 45%, 25% 70%, 42.5% 90%;
+  --tri07-faro: 42.5% 90%, 62.5% 85%, 55% 70%;
+  --tri08-faro: 42.5% 90%, 42.5% 70%, 55% 70%;
+  --tri09-faro: 45% 42.5%, 60% 55%, 50% 85%;
+  --tri10-faro: 45% 42.5%, 37.5% 62.5%, 50% 85%;
+  --tri11-faro: 50% 15%, 35% 30%, 50% 45%;
+  --tri12-faro: 50% 15%, 65% 30%, 50% 45%;
+  --tri13-faro: 35% 30%, 45% 42.5%, 50% 42.5%;
+  --tri14-faro: 65% 30%, 55% 42.5%, 50% 42.5%;
+  --tri15-faro: 35% 30%, 25% 32.5%, 27.5% 22.5%;
+  --tri16-faro: 27.5% 22.5%, 32.5% 15%, 40% 20%;
+  --tri17-faro: 25% 32.5%, 20% 25%, 27.5% 22.5%;
+  --tri18-faro: 65% 30%, 75% 32.5%, 72.5% 22.5%;
+  --tri19-faro: 72.5% 22.5%, 67.5% 15%, 60% 20%;
+  --tri20-faro: 75% 32.5%, 80% 25%, 72.5% 22.5%;
+  --tri21-faro: 37.5% 45%, 62.5% 55%, 65% 62.5%;
+  --tri22-faro: 62.5% 55%, 70% 60%, 65% 65%;
+  --tri23-faro: 45% 62.5%, 62.5% 72.5%, 67.5% 77.5%;
+  --tri24-faro: 50% 32.5%, 46.25% 36.25%, 50% 43.75%;
+  --tri25-faro: 50% 32.5%, 53.75% 36.25%, 50% 43.75%;
+  --tri26-faro: 40% 31.25%, 45% 31.25%, 42.5% 36.25%; /* Ojo Izq */
+  --tri27-faro: 55% 31.25%, 60% 31.25%, 57.5% 36.25%; /* Ojo Der */
+  --tri28-faro: 50% 85%, 57.5% 87.5%, 53.75% 88.75%;
+  --tri29-faro: 53.75% 88.75%, 52.5% 90%, 50% 85%;
+}
+
+/* CLASES (Llamada a variables faro) */
+.tri00 { background: #8d6e63; clip-path: polygon(var(--tri00-faro)); }
+.tri01 { background: #8d6e63; clip-path: polygon(var(--tri01-faro)); }
+.tri02 { background: #8d6e63; clip-path: polygon(var(--tri02-faro)); }
+.tri03 { background: #8d6e63; clip-path: polygon(var(--tri03-faro)); }
+.tri04 { background: #81c784; clip-path: polygon(var(--tri04-faro)); }
+.tri05 { background: #81c784; clip-path: polygon(var(--tri05-faro)); }
+.tri06 { background: #78909c; clip-path: polygon(var(--tri06-faro)); }
+.tri07 { background: #546e7a; clip-path: polygon(var(--tri07-faro)); }
+.tri08 { background: #78909c; clip-path: polygon(var(--tri08-faro)); }
+.tri09 { background: #eceff1; clip-path: polygon(var(--tri09-faro)); }
+.tri10 { background: #cfd8dc; clip-path: polygon(var(--tri10-faro)); }
+.tri11 { background: #90a4ae; clip-path: polygon(var(--tri11-faro)); }
+.tri12 { background: #b0bec5; clip-path: polygon(var(--tri12-faro)); }
+.tri13 { background: #90a4ae; clip-path: polygon(var(--tri13-faro)); }
+.tri14 { background: #b0bec5; clip-path: polygon(var(--tri14-faro)); }
+.tri15 { background: #78909c; clip-path: polygon(var(--tri15-faro)); }
+.tri16 { background: #b0bec5; clip-path: polygon(var(--tri16-faro)); }
+.tri17 { background: #cfd8dc; clip-path: polygon(var(--tri17-faro)); }
+.tri18 { background: #78909c; clip-path: polygon(var(--tri18-faro)); }
+.tri19 { background: #b0bec5; clip-path: polygon(var(--tri19-faro)); }
+.tri20 { background: #cfd8dc; clip-path: polygon(var(--tri20-faro)); }
+.tri21 { background: #78909c; clip-path: polygon(var(--tri21-faro)); }
+.tri22 { background: #546e7a; clip-path: polygon(var(--tri22-faro)); }
+.tri23 { background: #78909c; clip-path: polygon(var(--tri23-faro)); }
+.tri24 { background: #263238; clip-path: polygon(var(--tri24-faro)); }
+.tri25 { background: #37474f; clip-path: polygon(var(--tri25-faro)); }
+.tri26 { background: #263238; clip-path: polygon(var(--tri26-faro)); }
+.tri27 { background: #263238; clip-path: polygon(var(--tri27-faro)); }
+.tri28 { background: #90a4ae; clip-path: polygon(var(--tri28-faro)); }
+.tri29 { background: #90a4ae; clip-path: polygon(var(--tri29-faro)); }
