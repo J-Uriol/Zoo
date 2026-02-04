@@ -1,0 +1,96 @@
+:root {
+    --ancho: 500px;
+    --alto: 400px;
+    
+    /* DECLARACIÓN DE VARIABLES DE RECORTE */
+    --tri01-maksym: polygon(50% 50%, 30% 37.5%, 10% 45%);
+    --tri02-maksym: polygon(30% 37.5%, 10% 45%, 16% 62.5%);
+    --tri03-maksym: polygon(50% 50%, 30% 37.5%, 36% 70%);
+    --tri04-maksym: polygon(36% 70%, 30% 37.5%, 16% 62.5%);
+    --tri05-maksym: polygon(10% 45%, 4% 55%, 16% 62.5%);
+    --tri06-maksym: polygon(16% 62.5%, 26% 75%, 36% 70%);
+    --tri07-maksym: polygon(26% 75%, 36% 70%, 46% 77.5%);
+    --tri08-maksym: polygon(50% 37.5%, 46% 45%, 54% 45%);
+    --tri09-maksym: polygon(46% 45%, 54% 45%, 50% 80%);
+    --tri10-maksym: polygon(46% 35%, 47% 42.5%, 50% 40%);
+    --tri11-maksym: polygon(54% 35%, 53% 42.5%, 50% 40%);
+    --tri12-maksym: polygon(46% 55%, 42% 62.5%, 50% 65%);
+    --tri13-maksym: polygon(54% 55%, 58% 62.5%, 50% 65%);
+    --tri14-maksym: polygon(50% 50%, 70% 37.5%, 90% 45%);
+    --tri15-maksym: polygon(70% 37.5%, 90% 45%, 84% 62.5%);
+    --tri16-maksym: polygon(50% 50%, 70% 37.5%, 64% 70%);
+    --tri17-maksym: polygon(64% 70%, 70% 37.5%, 84% 62.5%);
+    --tri18-maksym: polygon(90% 45%, 96% 55%, 84% 62.5%);
+    --tri19-maksym: polygon(84% 62.5%, 74% 75%, 64% 70%);
+    --tri20-maksym: polygon(74% 75%, 64% 70%, 54% 77.5%);
+    --tri21-maksym: polygon(30% 37.5%, 46% 45%, 50% 50%);
+    --tri22-maksym: polygon(70% 37.5%, 54% 45%, 50% 50%);
+    --tri23-maksym: polygon(46% 77.5%, 50% 85%, 54% 77.5%);
+    --tri24-maksym: polygon(10% 45%, 20% 40%, 30% 37.5%);
+    --tri25-maksym: polygon(90% 45%, 80% 40%, 70% 37.5%);
+    --tri26-maksym: polygon(36% 70%, 46% 55%, 46% 77.5%);
+    --tri27-maksym: polygon(64% 70%, 54% 55%, 54% 77.5%);
+    --tri28-maksym: polygon(4% 55%, 8% 65%, 16% 62.5%);
+    --tri29-maksym: polygon(96% 55%, 92% 65%, 84% 62.5%);
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #121212;
+}
+
+.canvas {
+    position: relative;
+    width: var(--ancho);
+    height: var(--alto);
+    background: #9b05ff;
+}
+
+[class^="tri"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: filter 0.3s ease;
+}
+
+[class^="tri"]:hover {
+    filter: brightness(1.4);
+    z-index: 10;
+}
+
+/* USO DE LAS VARIABLES */
+.tri01 { background: #4B3B5B; clip-path: var(--tri01-maksym); }
+.tri02 { background: #333333; clip-path: var(--tri02-maksym); }
+.tri03 { background: #7A6A8A; clip-path: var(--tri03-maksym); }
+.tri04 { background: #E0E0E0; clip-path: var(--tri04-maksym); }
+.tri05 { background: #222222; clip-path: var(--tri05-maksym); }
+.tri06 { background: #333333; clip-path: var(--tri06-maksym); }
+.tri07 { background: #4B3B5B; clip-path: var(--tri07-maksym); }
+.tri08 { background: #222222; clip-path: var(--tri08-maksym); }
+.tri09 { background: #333333; clip-path: var(--tri09-maksym); }
+.tri10 { background: #4B3B5B; clip-path: var(--tri10-maksym); }
+.tri11 { background: #4B3B5B; clip-path: var(--tri11-maksym); }
+.tri12 { background: #7A6A8A; clip-path: var(--tri12-maksym); }
+.tri13 { background: #7A6A8A; clip-path: var(--tri13-maksym); }
+.tri14 { background: #4B3B5B; clip-path: var(--tri14-maksym); }
+.tri15 { background: #333333; clip-path: var(--tri15-maksym); }
+.tri16 { background: #7A6A8A; clip-path: var(--tri16-maksym); }
+.tri17 { background: #E0E0E0; clip-path: var(--tri17-maksym); }
+.tri18 { background: #222222; clip-path: var(--tri18-maksym); }
+.tri19 { background: #333333; clip-path: var(--tri19-maksym); }
+.tri20 { background: #4B3B5B; clip-path: var(--tri20-maksym); }
+.tri21 { background: #222222; clip-path: var(--tri21-maksym); }
+.tri22 { background: #222222; clip-path: var(--tri22-maksym); }
+.tri23 { background: #111111; clip-path: var(--tri23-maksym); }
+.tri24 { background: #7A6A8A; clip-path: var(--tri24-maksym); }
+.tri25 { background: #7A6A8A; clip-path: var(--tri25-maksym); }
+.tri26 { background: #333333; clip-path: var(--tri26-maksym); }
+.tri27 { background: #333333; clip-path: var(--tri27-maksym); }
+.tri28 { background: #4B3B5B; clip-path: var(--tri28-maksym); }
+.tri29 { background: #4B3B5B; clip-path: var(--tri29-maksym); }
