@@ -1,0 +1,206 @@
+:root {
+  --ancho: 500px;
+  --alto: 700px;
+
+  /* VARIABLES DE POLIGONOS (URIOL) */
+
+  /* Cuerpo Central */
+  --tri01-uriol: polygon(50% 31.43%, 40% 50%, 60% 50%);
+  --tri02-uriol: polygon(50% 31.43%, 40% 50%, 32% 42.86%);
+  --tri03-uriol: polygon(50% 31.43%, 60% 50%, 68% 42.86%);
+  --tri04-uriol: polygon(40% 50%, 50% 71.43%, 60% 50%);
+  --tri05-uriol: polygon(40% 50%, 36% 64.29%, 50% 71.43%);
+  --tri06-uriol: polygon(60% 50%, 64% 64.29%, 50% 71.43%);
+  --tri07-uriol: polygon(50% 71.43%, 40% 82.86%, 60% 82.86%);
+
+  /* Cabeza */
+  --tri08-uriol: polygon(50% 7.14%, 64% 14.29%, 50% 21.43%);
+  --tri09-uriol: polygon(50% 7.14%, 36% 14.29%, 50% 21.43%);
+  --tri10-uriol: polygon(36% 14.29%, 30% 25.71%, 50% 21.43%);
+  --tri11-uriol: polygon(64% 14.29%, 70% 25.71%, 50% 21.43%);
+  --tri12-uriol: polygon(50% 21.43%, 36% 25.71%, 44% 31.43%);
+  --tri13-uriol: polygon(50% 21.43%, 64% 25.71%, 56% 31.43%);
+  --tri14-uriol: polygon(36% 25.71%, 30% 25.71%, 44% 31.43%);
+  --tri15-uriol: polygon(64% 25.71%, 70% 25.71%, 56% 31.43%);
+
+  /* Ojos */
+  --tri16-uriol: polygon(42% 26.43%, 45% 24.29%, 47% 27.86%);
+  --tri17-uriol: polygon(58% 26.43%, 55% 24.29%, 53% 27.86%);
+
+  /* Pico */
+  --tri18-uriol: polygon(50% 25.71%, 46% 27.86%, 54% 27.86%);
+  --tri19-uriol: polygon(50% 31.43%, 46% 27.86%, 54% 27.86%);
+
+  /* Alas y Costados */
+  --tri20-uriol: polygon(30% 25.71%, 20% 50%, 32% 42.86%);
+  --tri21-uriol: polygon(70% 25.71%, 80% 50%, 68% 42.86%);
+  --tri22-uriol: polygon(32% 42.86%, 20% 50%, 36% 64.29%);
+  --tri23-uriol: polygon(68% 42.86%, 80% 50%, 64% 64.29%);
+  --tri24-uriol: polygon(20% 50%, 16% 68.57%, 36% 64.29%);
+  --tri25-uriol: polygon(80% 50%, 84% 68.57%, 64% 64.29%);
+  --tri26-uriol: polygon(36% 64.29%, 50% 71.43%, 40% 82.86%);
+  --tri27-uriol: polygon(64% 64.29%, 50% 71.43%, 60% 82.86%);
+
+  /* Patas */
+  --tri28-uriol: polygon(40% 82.86%, 32% 92.86%, 44% 92.86%);
+  --tri29-uriol: polygon(40% 82.86%, 44% 92.86%, 48% 88.57%);
+  --tri30-uriol: polygon(60% 82.86%, 68% 92.86%, 56% 92.86%);
+  --tri31-uriol: polygon(60% 82.86%, 56% 92.86%, 52% 88.57%);
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Fondo eliminado (transparente/blanco por defecto) */
+}
+
+.canvas {
+  position: relative;
+  width: var(--ancho);
+  height: var(--alto);
+  background: transparent;
+}
+
+/* Estilos comunes (Hover y transición eliminados) */
+[class^="tri"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* ASIGNACIÓN DE VARIABLES */
+
+.tri01 {
+  background: #ffffff;
+  clip-path: var(--tri01-uriol);
+}
+.tri02 {
+  background: #f2f2f2;
+  clip-path: var(--tri02-uriol);
+}
+.tri03 {
+  background: #f2f2f2;
+  clip-path: var(--tri03-uriol);
+}
+.tri04 {
+  background: #e6e6e6;
+  clip-path: var(--tri04-uriol);
+}
+.tri05 {
+  background: #d9d9d9;
+  clip-path: var(--tri05-uriol);
+}
+.tri06 {
+  background: #d9d9d9;
+  clip-path: var(--tri06-uriol);
+}
+.tri07 {
+  background: #222222;
+  clip-path: var(--tri07-uriol);
+}
+
+.tri08 {
+  background: #1a1a1a;
+  clip-path: var(--tri08-uriol);
+}
+.tri09 {
+  background: #222222;
+  clip-path: var(--tri09-uriol);
+}
+.tri10 {
+  background: #0d0d0d;
+  clip-path: var(--tri10-uriol);
+}
+.tri11 {
+  background: #0d0d0d;
+  clip-path: var(--tri11-uriol);
+}
+.tri12 {
+  background: #f2f2f2;
+  clip-path: var(--tri12-uriol);
+}
+.tri13 {
+  background: #e6e6e6;
+  clip-path: var(--tri13-uriol);
+}
+.tri14 {
+  background: #d9d9d9;
+  clip-path: var(--tri14-uriol);
+}
+.tri15 {
+  background: #d9d9d9;
+  clip-path: var(--tri15-uriol);
+}
+
+.tri16 {
+  background: #000000;
+  clip-path: var(--tri16-uriol);
+}
+.tri17 {
+  background: #000000;
+  clip-path: var(--tri17-uriol);
+}
+
+.tri18 {
+  background: #ff9900;
+  clip-path: var(--tri18-uriol);
+}
+.tri19 {
+  background: #e68a00;
+  clip-path: var(--tri19-uriol);
+}
+
+.tri20 {
+  background: #1a1a1a;
+  clip-path: var(--tri20-uriol);
+}
+.tri21 {
+  background: #1a1a1a;
+  clip-path: var(--tri21-uriol);
+}
+.tri22 {
+  background: #262626;
+  clip-path: var(--tri22-uriol);
+}
+.tri23 {
+  background: #262626;
+  clip-path: var(--tri23-uriol);
+}
+.tri24 {
+  background: #000000;
+  clip-path: var(--tri24-uriol);
+}
+.tri25 {
+  background: #000000;
+  clip-path: var(--tri25-uriol);
+}
+.tri26 {
+  background: #1a1a1a;
+  clip-path: var(--tri26-uriol);
+}
+.tri27 {
+  background: #1a1a1a;
+  clip-path: var(--tri27-uriol);
+}
+
+.tri28 {
+  background: #4d4d4d;
+  clip-path: var(--tri28-uriol);
+}
+.tri29 {
+  background: #666666;
+  clip-path: var(--tri29-uriol);
+}
+.tri30 {
+  background: #4d4d4d;
+  clip-path: var(--tri30-uriol);
+}
+.tri31 {
+  background: #666666;
+  clip-path: var(--tri31-uriol);
+}
