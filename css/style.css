@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    height: 200vh;
+}
+
+.scene {
+    max-width: 700px;
+    max-height: 600px;
+    margin: auto;
+    position: fixed;
+    inset: 0;
+}
+
+.tri {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    background: transparent;
+    clip-path: polygon(50% 50%, 50% 50%, 50% 50%);
+    transition: all 1s ease-in-out;
+}
+
+
+.scene.nes .tri {
+    clip-path: var(--shape-nes);
+}
+
+.scene.nes .hide {
+    opacity: 0;
+}
