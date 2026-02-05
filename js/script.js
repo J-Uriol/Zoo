@@ -5,7 +5,8 @@ const SETS = {
   nes: 22,
   maks: 29,
   faro: 29,
-  uriol: 31
+  uriol: 31,
+  ezq: 35
 }
 
 const HIDDEN = 'polygon(50% 50%,50% 50%,50% 50%)'
