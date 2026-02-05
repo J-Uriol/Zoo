@@ -1,5 +1,5 @@
 :root {
-  /* --------------------- ORI (Bajado 10%) --------------------- */
+  /* --------------------- ORI --------------------- */
   --tri01-ori-polygon: polygon(10% 31.83%, 10.03% 76.02%, 26.51% 59.13%);
   --tri02-ori-polygon: polygon(9.83% 75.75%, 21.93% 83.65%, 18% 68%);
   --tri03-ori-polygon: polygon(30% 61.93%, 30% 81.03%, 37.91% 84%);
@@ -66,54 +66,54 @@
   --tri31-ori-bg: #cc9f6b;
   --tri32-ori-bg: #9e8972;
 
-  /* --------------------- NES (Escala 1.5x - Max Ancho) --------------------- */
-  --tri01-nes-polygon: polygon(43.75% 39.5%, 30.62% 62%, 71.87% 54.35%);
-  --tri02-nes-polygon: polygon(79.37% 39.5%, 38.12% 60.5%, 92.5% 60.5%);
-  --tri03-nes-polygon: polygon(30.62% 77.75%, 92.5% 77.75%, 62.5% 50%);
-  --tri04-nes-polygon: polygon(79.37% 77.75%, 100% 63.05%, 71.12% 53%);
-  --tri05-nes-polygon: polygon(30.62% 62%, 53.12% 80%, 66.25% 50%);
-  --tri06-nes-polygon: polygon(71.12% 80%, 92.5% 60.5%, 62.5% 50%);
-  --tri07-nes-polygon: polygon(71.12% 80%, 82.37% 80%, 79.37% 72.5%);
-  --tri08-nes-polygon: polygon(40.75% 80%, 43.37% 72.5%, 53.12% 80%);
-  --tri09-nes-polygon: polygon(0.62% 52.25%, 2.5% 62%, 21.25% 47.75%);
-  --tri10-nes-polygon: polygon(2.5% 62%, 26.87% 59%, 21.25% 47.75%);
-  --tri11-nes-polygon: polygon(2.5% 62%, 26.87% 59%, 21.25% 71%);
-  --tri12-nes-polygon: polygon(45.62% 74%, 26.87% 59%, 21.25% 71%);
-  --tri13-nes-polygon: polygon(30.62% 27.5%, 58% 27.5%, 34.37% 17%);
-  --tri14-nes-polygon: polygon(30.62% 27.5%, 58% 27.5%, 38.12% 36.5%);
-  --tri15-nes-polygon: polygon(64.37% 27.5%, 91.37% 27.5%, 88.75% 17%);
-  --tri16-nes-polygon: polygon(64.37% 27.5%, 91.37% 27.5%, 85% 36.5%);
-  --tri17-nes-polygon: polygon(30.62% 36.5%, 61.37% 26%, 92.5% 36.5%);
-  --tri18-nes-polygon: polygon(30.62% 36.5%, 61.37% 48.5%, 92.5% 36.5%);
-  --tri19-nes-polygon: polygon(45.62% 47%, 61.37% 72.5%, 77.5% 47%);
-  --tri20-nes-polygon: polygon(43.75% 36.5%, 51.25% 39.5%, 51.25% 36.5%);
-  --tri21-nes-polygon: polygon(71.87% 36.5%, 71.87% 39.5%, 79.37% 36.5%);
-  --tri22-nes-polygon: polygon(56.87% 41%, 58.75% 42.5%, 60.62% 41%);
+  /* --------------------- NES  --------------------- */
+  --tri01-nes-polygon: polygon(43.75% 33%, 30.62% 57%, 71.87% 49%);
+  --tri02-nes-polygon: polygon(79.37% 33%, 38.12% 55%, 92.5% 55%);
+  --tri03-nes-polygon: polygon(30.62% 72%, 92.5% 72%, 62.5% 46%);
+  --tri04-nes-polygon: polygon(79.37% 72%, 100% 58%, 71.12% 46%);
+  --tri05-nes-polygon: polygon(30.62% 55%, 53.12% 74%, 66.25% 46%);
+  --tri06-nes-polygon: polygon(71.12% 74%, 92.5% 55%, 62.5% 46%);
+  --tri07-nes-polygon: polygon(71.12% 74%, 82.37% 74%, 79.37% 66%);
+  --tri08-nes-polygon: polygon(40.75% 74%, 43.37% 66%, 53.12% 74%);
+  --tri09-nes-polygon: polygon(0.62% 46%, 2.5% 55%, 21.25% 42%);
+  --tri10-nes-polygon: polygon(2.5% 55%, 26.87% 53%, 21.25% 42%);
+  --tri11-nes-polygon: polygon(2.5% 55%, 26.87% 53%, 21.25% 66%);
+  --tri12-nes-polygon: polygon(45.62% 68%, 26.87% 53%, 21.25% 66%);
+  --tri13-nes-polygon: polygon(30.62% 22%, 58% 22%, 34.37% 12%);
+  --tri14-nes-polygon: polygon(30.62% 22%, 58% 22%, 38.12% 30%);
+  --tri15-nes-polygon: polygon(64.37% 22%, 91.37% 22%, 88.75% 12%);
+  --tri16-nes-polygon: polygon(64.37% 22%, 91.37% 22%, 85% 30%);
+  --tri17-nes-polygon: polygon(30.62% 30%, 61.37% 20%, 92.5% 30%);
+  --tri18-nes-polygon: polygon(30.62% 30%, 61.37% 43%, 92.5% 30%);
+  --tri19-nes-polygon: polygon(45.62% 42%, 61.37% 66%, 77.5% 42%);
+  --tri20-nes-polygon: polygon(43.75% 30%, 51.25% 34%, 51.25% 30%);
+  --tri21-nes-polygon: polygon(71.87% 30%, 71.87% 34%, 79.37% 30%);
+  --tri22-nes-polygon: polygon(56.87% 35%, 58.75% 37%, 60.62% 35%);
 
-  --tri01-nes-bg: #e3b06b;
-  --tri02-nes-bg: #e3b06b;
-  --tri03-nes-bg: #e3b06b;
-  --tri04-nes-bg: #e3b06b;
-  --tri05-nes-bg: #f4dcb1;
-  --tri06-nes-bg: #f4dcb1;
-  --tri07-nes-bg: #c58c40;
-  --tri08-nes-bg: #c58c40;
-  --tri09-nes-bg: #f4dcb1;
-  --tri10-nes-bg: #f4dcb1;
-  --tri11-nes-bg: #f4dcb1;
-  --tri12-nes-bg: #f4dcb1;
-  --tri13-nes-bg: #c58c40;
-  --tri14-nes-bg: #c58c40;
-  --tri15-nes-bg: #c58c40;
-  --tri16-nes-bg: #c58c40;
-  --tri17-nes-bg: #c58c40;
-  --tri18-nes-bg: #c58c40;
-  --tri19-nes-bg: #eee3d3;
-  --tri20-nes-bg: #7c5c28;
-  --tri21-nes-bg: #58432b;
-  --tri22-nes-bg: #7a6c53;
+  --tri01-nes-bg: #e0dddd;
+  --tri02-nes-bg: #d3d1d1;
+  --tri03-nes-bg: #cfcfcf;
+  --tri04-nes-bg: #c4c4c4;
+  --tri05-nes-bg: #dfe6ed;
+  --tri06-nes-bg: #dfe6ed;
+  --tri07-nes-bg: #b0c0d0;
+  --tri08-nes-bg: #b0c0d0;
+  --tri09-nes-bg: #dfe6ed;
+  --tri10-nes-bg: #dfe6ed;
+  --tri11-nes-bg: #dfe6ed;
+  --tri12-nes-bg: #dfe6ed;
+  --tri13-nes-bg: #b0c0d0;
+  --tri14-nes-bg: #b0c0d0;
+  --tri15-nes-bg: #b0c0d0;
+  --tri16-nes-bg: #b0c0d0;
+  --tri17-nes-bg: #b0c0d0;
+  --tri18-nes-bg: #b0c0d0;
+  --tri19-nes-bg: #f8f8fa;
+  --tri20-nes-bg: #333333;
+  --tri21-nes-bg: #333;
+  --tri22-nes-bg: #a0a6b0;
 
-  /* --------------------- MAKS (Subido 15%) --------------------- */
+  /* --------------------- MAKS --------------------- */
   --tri01-maks-polygon: polygon(50% 35%, 30% 22.5%, 10% 30%);
   --tri02-maks-polygon: polygon(30% 22.5%, 10% 30%, 16% 47.5%);
   --tri03-maks-polygon: polygon(50% 35%, 30% 22.5%, 36% 55%);
@@ -122,14 +122,14 @@
   --tri06-maks-polygon: polygon(16% 47.5%, 26% 60%, 36% 55%);
   --tri07-maks-polygon: polygon(26% 60%, 36% 55%, 46% 62.5%);
   --tri08-maks-polygon: polygon(50% 22.5%, 46% 30%, 54% 30%);
-  --tri09-maks-polygon: polygon(46% 30%, 54% 30%, 50% 65%);
+  --tri09-maks-polygon: polygon(70% 22.5%, 90% 30%, 84% 47.5%);
   --tri10-maks-polygon: polygon(46% 20%, 47% 27.5%, 50% 25%);
   --tri11-maks-polygon: polygon(54% 20%, 53% 27.5%, 50% 25%);
   --tri12-maks-polygon: polygon(46% 40%, 42% 47.5%, 50% 50%);
   --tri13-maks-polygon: polygon(54% 40%, 58% 47.5%, 50% 50%);
   --tri14-maks-polygon: polygon(50% 35%, 70% 22.5%, 90% 30%);
-  --tri15-maks-polygon: polygon(70% 22.5%, 90% 30%, 84% 47.5%);
-  --tri16-maks-polygon: polygon(50% 35%, 70% 22.5%, 64% 55%);
+  --tri15-maks-polygon: polygon(50% 35%, 70% 22.5%, 64% 55%);
+  --tri16-maks-polygon: polygon(96% 40%, 92% 50%, 84% 47.5%);
   --tri17-maks-polygon: polygon(64% 55%, 70% 22.5%, 84% 47.5%);
   --tri18-maks-polygon: polygon(90% 30%, 96% 40%, 84% 47.5%);
   --tri19-maks-polygon: polygon(84% 47.5%, 74% 60%, 64% 55%);
@@ -142,7 +142,7 @@
   --tri26-maks-polygon: polygon(36% 55%, 46% 40%, 46% 62.5%);
   --tri27-maks-polygon: polygon(64% 55%, 54% 40%, 54% 62.5%);
   --tri28-maks-polygon: polygon(4% 40%, 8% 50%, 16% 47.5%);
-  --tri29-maks-polygon: polygon(96% 40%, 92% 50%, 84% 47.5%);
+  --tri29-maks-polygon:polygon(46% 30%, 54% 30%, 50% 65%);
 
   --tri01-maks-bg: #4b3b5b;
   --tri02-maks-bg: #333333;
@@ -158,8 +158,8 @@
   --tri12-maks-bg: #7a6a8a;
   --tri13-maks-bg: #7a6a8a;
   --tri14-maks-bg: #4b3b5b;
-  --tri15-maks-bg: #333333;
-  --tri16-maks-bg: #7a6a8a;
+  --tri15-maks-bg: #7a6a8a;
+  --tri16-maks-bg: #4b3b5b;
   --tri17-maks-bg: #e0e0e0;
   --tri18-maks-bg: #222222;
   --tri19-maks-bg: #333333;
@@ -172,9 +172,9 @@
   --tri26-maks-bg: #333333;
   --tri27-maks-bg: #333333;
   --tri28-maks-bg: #4b3b5b;
-  --tri29-maks-bg: #4b3b5b;
+  --tri29-maks-bg: #333333;
 
-  /* --------------------- FARO (Sin cambios) --------------------- */
+  /* --------------------- FARO --------------------- */
   --tri00-faro-polygon: polygon(55% 95%, 70% 45%, 62.5% 95%);
   --tri01-faro-polygon: polygon(70% 45%, 80% 42.5%, 62.5% 95%);
   --tri02-faro-polygon: polygon(70% 55%, 87.5% 52.5%, 80% 60%);
@@ -237,7 +237,7 @@
   --tri28-faro-bg: #90a4ae;
   --tri29-faro-bg: #90a4ae;
 
-  /* --------------------- URIOL (Sin cambios) --------------------- */
+  /* --------------------- URIOL --------------------- */
   --tri01-uriol-polygon: polygon(50% 31.43%, 40% 50%, 60% 50%);
   --tri02-uriol-polygon: polygon(50% 31.43%, 40% 50%, 32% 42.86%);
   --tri03-uriol-polygon: polygon(50% 31.43%, 60% 50%, 68% 42.86%);
