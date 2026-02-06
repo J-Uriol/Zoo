@@ -3,12 +3,12 @@ const buttons = document.querySelector('.buttons')
 const displayName = document.querySelector('.name')
 
 const SETS = {
-  ori: [32, 'Abel Oriach - Slowloris', '#e7e73fff'],
-  nes: [22, 'Nestor Aísa - Zorro Ártico', '#fff'],
-  maks: [29, 'Maksym Hrynenko - Murciélago', '#fff'],
-  faro: [29, 'Alberto Faro - Koala', '#fff'],
-  uriol: [31, 'Javier Uriol - Pingüino', '#fff'],
-  ezq: [35, 'Adrian Ezquerra - Toucannon', '#a4e5a4ff']
+  ori: [32, 'Abel Oriach - Slowloris', '#d3cb9cff'],
+  nes: [22, 'Nestor Aísa - Zorro Ártico', ' #a0d9deff'],
+  maks: [29, 'Maksym Hrynenko - Murciélago', '#ddd9ffff'],
+  faro: [29, 'Alberto Faro - Koala', '#9ecd94ff'],
+  uriol: [31, 'Javier Uriol - Pingüino', '#f2fbffff'],
+  ezq: [35, 'Adrian Ezquerra - Toucannon', '#76a877ff']
 }
 
 const C = 0, N = 1, B = 2;
