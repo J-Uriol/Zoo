@@ -7,8 +7,8 @@ body {
 }
 
 .scene {
-    max-width: 700px;
-    max-height: 600px;
+    max-width: 60vh;
+    max-height: 60vh;
     margin: auto;
     position: fixed;
     inset: 0;
@@ -56,4 +56,19 @@ body {
     font-family: inherit;
     width: 10em;
     padding: 1em 0;
+}
+
+.signature {
+    position: fixed;
+    right: 35vw;
+    bottom: 25vh;
+    margin: auto;
+    font-family: 'Mr Dafoe', cursive;
+    font-size: 13em;
+    color: #111;
+    transform: rotate(-7deg);
+    z-index: 10;
+    opacity: 0.9;
+    pointer-events: none;
+    user-select: none;
 }

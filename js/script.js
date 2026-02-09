@@ -1,15 +1,17 @@
 const scene = document.querySelector('.scene')
 const buttons = document.querySelector('.buttons')
 const displayName = document.querySelector('.name')
+const signature = document.querySelector('.signature')
 
 const SETS = {
+  logo: [37, 'IES José Mor de Fuentes', '#ddd'],
   ori: [32, 'Abel Oriach - Slowloris', '#d3cb9cff'],
   nes: [22, 'Nestor Aísa - Zorro Ártico', ' #a0d9deff'],
   maks: [29, 'Maksym Hrynenko - Murciélago', '#ddd9ffff'],
   faro: [29, 'Alberto Faro - Koala', '#9ecd94ff'],
   uriol: [31, 'Javier Uriol - Pingüino', '#f2fbffff'],
-  ezq: [35, 'Adrian Ezquerra - Toucannon', '#76a877ff'],
-  jimenez: [30, 'Adrián Jiménez - Cocodrilo', '#eff0acff']
+  ezq: [35, 'Adrian Ezquerra - Tucán', '#76a877ff'],
+  jimenez: [35, 'Adrián Jiménez - Cocodrilo', '#eff0acff']
 }
 
 const C = 0, N = 1, B = 2;
@@ -60,23 +62,11 @@ function onScroll() {
   const p = scrollY / (document.body.scrollHeight - innerHeight)
   const index = Math.min(Math.floor(p * keys.length), keys.length - 1)
   applySet(keys[index])
+  if (index > 0) signature.style.display = 'none'
+  else signature.style.display = 'block'
 }
 
 addEventListener('scroll', onScroll, { passive: true })
-
-/* Botones */
-function scrollToIndex(index) {
-  const segmentHeight = (document.body.scrollHeight - innerHeight) / keys.length
-  window.scrollTo({ top: index * segmentHeight, behavior: 'smooth' })
-}
-
-buttons.addEventListener('click', e => {
-  const segmentHeight = (document.body.scrollHeight - innerHeight) / keys.length
-  const currentIndex = Math.min(Math.floor(scrollY / segmentHeight), keys.length - 1)
-
-  if (e.target.id === 'next') scrollToIndex(Math.min(currentIndex + 1, keys.length - 1))
-  if (e.target.id === 'previous') scrollToIndex(Math.max(currentIndex - 1, 0))
-})
 
 /* Init */
 applySet(keys[0])
