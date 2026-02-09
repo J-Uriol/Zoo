@@ -8,7 +8,8 @@ const SETS = {
   maks: [29, 'Maksym Hrynenko - Murciélago', '#ddd9ffff'],
   faro: [29, 'Alberto Faro - Koala', '#9ecd94ff'],
   uriol: [31, 'Javier Uriol - Pingüino', '#f2fbffff'],
-  ezq: [35, 'Adrian Ezquerra - Toucannon', '#76a877ff']
+  ezq: [35, 'Adrian Ezquerra - Toucannon', '#76a877ff'],
+  jimenez: [30, 'Adrián Jiménez - Cocodrilo', '#fff']
 }
 
 const C = 0, N = 1, B = 2;
