@@ -9,7 +9,7 @@ const SETS = {
   faro: [29, 'Alberto Faro - Koala', '#9ecd94ff'],
   uriol: [31, 'Javier Uriol - Pingüino', '#f2fbffff'],
   ezq: [35, 'Adrian Ezquerra - Toucannon', '#76a877ff'],
-  jimenez: [30, 'Adrián Jiménez - Cocodrilo', '#fff']
+  jimenez: [30, 'Adrián Jiménez - Cocodrilo', '#eff0acff']
 }
 
 const C = 0, N = 1, B = 2;
