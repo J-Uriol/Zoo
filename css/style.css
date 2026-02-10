@@ -58,17 +58,21 @@ body {
     padding: 1em 0;
 }
 
+
+.scene {
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+}
+
 .signature {
-    position: fixed;
-    right: 35vw;
-    bottom: 25vh;
-    margin: auto;
     font-family: 'Mr Dafoe', cursive;
     font-size: 13em;
     color: #111;
-    transform: rotate(-7deg);
+    transform: rotate(-7deg) translate(-1vw, -8vh);
     z-index: 10;
     opacity: 0.9;
     pointer-events: none;
     user-select: none;
+    transition: all 0.8s ease-in-out;
 }

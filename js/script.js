@@ -11,7 +11,9 @@ const SETS = {
   faro: [29, 'Alberto Faro - Koala', '#9ecd94ff'],
   uriol: [31, 'Javier Uriol - Pingüino', '#f2fbffff'],
   ezq: [35, 'Adrian Ezquerra - Tucán', '#76a877ff'],
-  jimenez: [35, 'Adrián Jiménez - Cocodrilo', '#eff0acff']
+  jimenez: [35, 'Adrián Jiménez - Cocodrilo', '#eff0acff'],
+  karla: [35, 'Karla - Llamicornio', '#f1daf3ff'],
+  fofana: [40, 'Founeke Fofana - Camaleón', '#aba']
 }
 
 const C = 0, N = 1, B = 2;
@@ -62,8 +64,8 @@ function onScroll() {
   const p = scrollY / (document.body.scrollHeight - innerHeight)
   const index = Math.min(Math.floor(p * keys.length), keys.length - 1)
   applySet(keys[index])
-  if (index > 0) signature.style.display = 'none'
-  else signature.style.display = 'block'
+  if (index > 0) signature.style.opacity = 0
+  else signature.style.opacity = 0.9
 }
 
 addEventListener('scroll', onScroll, { passive: true })
