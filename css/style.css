@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
 body {
     margin: 0;
     height: 500vh;
     background-color: whitesmoke;
-    font-family: 'Courier New', Courier, monospace;
-    transition: all 1s ease-in-out;
+    font-family: 'Aldrich', Courier, monospace;
+    transition: all 1s ease;
 }
 
 .scene {
@@ -23,8 +24,16 @@ body {
     transition: all 1s ease-in-out;
 }
 
+
 .scene.nes .tri {
     clip-path: var(--shape-nes);
+}
+
+.tri:hover {
+    transform: translate(var(--tx), var(--ty)) rotate(var(--r)) !important;
+    opacity: 0.7 !important;
+    transition-delay: 0s !important;
+    transition: all 0.05s ease-in-out;
 }
 
 .scene.nes .hide {
@@ -71,7 +80,7 @@ body {
     color: #111;
     transform: rotate(-7deg) translate(-1vw, -8vh);
     z-index: 10;
-    opacity: 0.9;
+    opacity: 0;
     pointer-events: none;
     user-select: none;
     transition: all 0.8s ease-in-out;
