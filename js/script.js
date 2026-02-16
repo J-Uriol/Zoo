@@ -7,8 +7,9 @@ const SETS = {
   daw: [11, '', '100, 200, 250'],
   logo: [37, 'IES José Mor de Fuentes', '125,219,228'],
   ori: [32, 'Abel Oriach - Slowloris', '104,95,184'],
-  nes: [22, 'Nestor Aísa - Zorro Ártico', '124,189,109'],
+  nes: [22, 'Néstor Aísa - Zorro Ártico', '124,189,109'],
   maks: [29, 'Maksym Hrynenko - Murciélago', '229,112,240'],
+  rana: [30, 'Marcos Martel - Rana', '65,211,174'],
   faro: [29, 'Alberto Faro - Koala', '214,204,144'],
   uriol: [31, 'Javier Uriol - Pingüino', '224,219,168'],
   ezq: [35, 'Adrian Ezquerra - Tucán', '125,219,228'],
@@ -87,23 +88,29 @@ function applySet(name) {
    Auto-scroll simple
 ---------------------- */
 let autoIndex = 0
+let autoInterval = null
 
-function goToNextSet() {
-  autoIndex = (autoIndex + 1) % keys.length
-  window.scrollTo({
-    top: innerHeight * autoIndex,
-    behavior: 'smooth'
-  })
+function startAutoScroll() {
+  if (autoInterval) clearInterval(autoInterval)
+
+  autoInterval = setInterval(() => {
+    autoIndex = (autoIndex + 1) % keys.length
+    window.scrollTo({
+      top: innerHeight * autoIndex,
+      behavior: 'smooth'
+    })
+  }, 3000)
 }
 
-setInterval(goToNextSet, 3000)
+startAutoScroll()
 
-/* Scroll manual */
 function onScroll() {
   const index = Math.min(Math.floor(scrollY / innerHeight), keys.length - 1)
   autoIndex = index
   applySet(keys[index])
   signature.style.opacity = index === 1 ? 0.9 : 0
+
+  startAutoScroll()
 }
 
 addEventListener('scroll', onScroll, { passive: true })

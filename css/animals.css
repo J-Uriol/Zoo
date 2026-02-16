@@ -599,4 +599,68 @@
   --tri38-fofana-polygon: polygon(48.08% 37.43%, 41.02% 43.06%, 49.82% 39.37%);
   --tri39-fofana-polygon: polygon(14.04% 33.48%, 29.00% 39.35%, 35.23% 32.16%);
   --tri40-fofana-polygon: polygon(40.60% 43.16%, 29.00% 39.35%, 35.62% 31.91%);
+
+  /* --------------------- RANA --------------------- */
+  --tri01-rana-polygon: polygon(18.81% 48%, 4.28% 52%, 34.63% 51%);
+  --tri02-rana-polygon: polygon(84.13% 48%, 98.90% 52%, 68.06% 51%);
+  --tri03-rana-polygon: polygon(17.91% 48%, 51.38% 57%, 84.34% 48%);
+  --tri04-rana-polygon: polygon(24.37% 48%, 77.33% 48%, 50.95% 36%);
+  --tri05-rana-polygon: polygon(77.08% 48%, 77.08% 36%, 51.00% 36%);
+  --tri06-rana-polygon: polygon(24.47% 48%, 50.95% 36%, 24.32% 36%);
+  --tri07-rana-polygon: polygon(24.32% 36%, 29.56% 56%, 15.73% 53%);
+  --tri08-rana-polygon: polygon(15.66% 53%, 33.36% 63%, 29.56% 56%);
+  --tri09-rana-polygon: polygon(30.41% 58%, 43.48% 65%, 33.91% 65%);
+  --tri10-rana-polygon: polygon(77.25% 36%, 72.16% 56%, 85.59% 53%);
+  --tri11-rana-polygon: polygon(85.66% 53%, 68.47% 63%, 72.16% 56%);
+  --tri12-rana-polygon: polygon(71.33% 57%, 58.64% 65%, 67.92% 65%);
+  --tri13-rana-polygon: polygon(24.32% 36%, 77.09% 36%, 50.73% 21%);
+  --tri14-rana-polygon: polygon(24.32% 36%, 13.76% 16%, 50.71% 21%);
+  --tri15-rana-polygon: polygon(77.08% 36%, 88.09% 16%, 50.44% 21%);
+  --tri16-rana-polygon: polygon(13.76% 16%, 50.71% 2%, 50.57% 21%);
+  --tri17-rana-polygon: polygon(50.71% 2%, 88.08% 16%, 50.64% 21%);
+  --tri18-rana-polygon: polygon(40.21% 7%, 30.19% 10%, 19.24% 7%);
+  --tri19-rana-polygon: polygon(81.51% 7%, 71.49% 10%, 60.54% 7%);
+  --tri20-rana-polygon: polygon(19.24% 7%, 30.22% 3%, 40.24% 7%);
+  --tri21-rana-polygon: polygon(60.54% 7%, 71.53% 3%, 81.54% 7%);
+  --tri22-rana-polygon: polygon(54.04% 20%, 46.60% 20%, 50.34% 22%);
+  --tri23-rana-polygon: polygon(4.29% 52%, 16.02% 63%, 13.36% 52%);
+  --tri24-rana-polygon: polygon(98.94% 52%, 86.83% 63%, 89.58% 52%);
+  --tri25-rana-polygon: polygon(14.69% 58%, 23.97% 70%, 15.58% 58%);
+  --tri26-rana-polygon: polygon(88.25% 58%, 80.27% 70%, 87.46% 58%);
+  --tri27-rana-polygon: polygon(28.04% 50%, 51.37% 57%, 28.67% 53%);
+  --tri28-rana-polygon: polygon(51.37% 57%, 73.48% 50%, 72.75% 53%);
+  --tri29-rana-polygon: polygon(87.87% 61%, 92.63% 65%, 87.39% 65%);
+  --tri30-rana-polygon: polygon(15.16% 61%, 10.30% 65%, 15.65% 65%);
+
+
+  --tri01-rana-bg: #88aa00;
+  --tri02-rana-bg: #88aa00;
+  --tri03-rana-bg: #668000;
+  --tri04-rana-bg: #445500;
+  --tri05-rana-bg: #668000;
+  --tri06-rana-bg: #668000;
+  --tri07-rana-bg: #445500;
+  --tri08-rana-bg: #668000;
+  --tri09-rana-bg: #445500;
+  --tri10-rana-bg: #445500;
+  --tri11-rana-bg: #668000;
+  --tri12-rana-bg: #445500;
+  --tri13-rana-bg: #aad400;
+  --tri14-rana-bg: #445500;
+  --tri15-rana-bg: #445500;
+  --tri16-rana-bg: #668000;
+  --tri17-rana-bg: #88aa00;
+  --tri18-rana-bg: #cccccc;
+  --tri19-rana-bg: #cccccc;
+  --tri20-rana-bg: #668000;
+  --tri21-rana-bg: #668000;
+  --tri22-rana-bg: #ff9955;
+  --tri23-rana-bg: #445500;
+  --tri24-rana-bg: #445500;
+  --tri25-rana-bg: #668000;
+  --tri26-rana-bg: #668000;
+  --tri27-rana-bg: #222b00;
+  --tri28-rana-bg: #222b00;
+  --tri29-rana-bg: #88aa00;
+  --tri30-rana-bg: #88aa00;
 }
