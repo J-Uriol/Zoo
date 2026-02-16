@@ -21,9 +21,8 @@ const C = 0, N = 1, B = 2
 
 const HIDDEN = 'polygon(50% 50%,50% 50%,50% 50%)'
 const keys = Object.keys(SETS)
+const MAX = Math.max(...Object.values(SETS).map(s => s[C]))
 
-// Encontrar el máximo número de triángulos entre todos los sets
-const MAX = Math.max(...Object.values(SETS).map(set => set[C]))
 let currentSet = null
 
 /* Crear triángulos */
@@ -35,6 +34,7 @@ const tris = Array.from({ length: MAX }, (_, i) => {
   return t
 })
 
+/* Animar fondo */
 function animateGradient(from, to, steps = 30) {
   const fromArr = from.split(',').map(Number)
   const toArr = to.split(',').map(Number)
@@ -42,11 +42,14 @@ function animateGradient(from, to, steps = 30) {
 
   function step() {
     const t = stepCount / steps
-    const color = fromArr.map((v,i) => Math.round(v + (toArr[i]-v) * t))
-    document.body.style.background = `radial-gradient(at center, rgba(196, 196, 196, 0.5), rgb(${color.join(',')}))`
+    const color = fromArr.map((v, i) =>
+      Math.round(v + (toArr[i] - v) * t)
+    )
+    document.body.style.background =
+      `radial-gradient(at center, rgba(196,196,196,0.5), rgb(${color.join(',')}))`
 
     stepCount++
-    if(stepCount <= steps) requestAnimationFrame(step)
+    if (stepCount <= steps) requestAnimationFrame(step)
   }
 
   step()
@@ -80,13 +83,27 @@ function applySet(name) {
   })
 }
 
-/* Scroll */
+/* ---------------------
+   Auto-scroll simple
+---------------------- */
+let autoIndex = 0
+
+function goToNextSet() {
+  autoIndex = (autoIndex + 1) % keys.length
+  window.scrollTo({
+    top: innerHeight * autoIndex,
+    behavior: 'smooth'
+  })
+}
+
+setInterval(goToNextSet, 3000)
+
+/* Scroll manual */
 function onScroll() {
-  const p = scrollY / (document.body.scrollHeight - innerHeight)
-  const index = Math.min(Math.floor(p * keys.length), keys.length - 1)
+  const index = Math.min(Math.floor(scrollY / innerHeight), keys.length - 1)
+  autoIndex = index
   applySet(keys[index])
-  if (index != 1) signature.style.opacity = 0
-  else signature.style.opacity = 0.9
+  signature.style.opacity = index === 1 ? 0.9 : 0
 }
 
 addEventListener('scroll', onScroll, { passive: true })

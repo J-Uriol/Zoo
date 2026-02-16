@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
 body {
     margin: 0;
-    height: 500vh;
+    height: calc(100vh * 11);
     background-color: whitesmoke;
     font-family: 'Aldrich', Courier, monospace;
     transition: all 1s ease;
