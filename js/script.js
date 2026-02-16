@@ -17,6 +17,7 @@ const SETS = {
   karla: [35, "Karla - Llamicornio", "104,95,184"],
   fofana: [40, "Founeke Fofana - Camaleón", "141,221,255"],
   ped: [30, "Pedro José Torres - Perro", "141,221,255"],
+  mach: [50, "Javier Machado - Colibir", "141,221,255"],
 };
 
 const C = 0,
