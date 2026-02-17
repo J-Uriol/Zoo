@@ -4,7 +4,7 @@ const displayName = document.querySelector(".name");
 const signature = document.querySelector(".signature");
 
 const SETS = {
-  daw: [11, "", "100, 200, 250"],
+  daw: [13, "", "100, 200, 250"],
   logo: [37, "IES José Mor de Fuentes", "125,219,228"],
   ori: [32, "Abel Oriach - Slowloris", "104,95,184"],
   nes: [22, "Néstor Aísa - Zorro Ártico", "124,189,109"],
