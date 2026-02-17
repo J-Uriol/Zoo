@@ -82,7 +82,7 @@ function applySet(name) {
       tri.style.background = "transparent";
       tri.style.clipPath = HIDDEN;
     }
-  });
+  })
 }
 /* ---------------------
    Auto-scroll Controlado
